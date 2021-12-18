@@ -5,6 +5,7 @@ client.login(process.env.token);
 
 client.on("ready", () => {
     console.log("Il bot è ONLINE")
+    bot.user.setActivity("Non te", {type:"LISTENING"})
 })
 
 //Prima di tutto mandare il messaggio del ticket
