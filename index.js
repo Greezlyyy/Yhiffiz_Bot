@@ -5,7 +5,9 @@ client.login(process.env.token);
 
 client.on("ready", () => {
     console.log("Il bot è ONLINE")
-    bot.user.setActivity('pacman world 2')
+    client.user.setStatus("idle")
+        .then(console.log)
+        .catch(console.error);
 })
 
 //Prima di tutto mandare il messaggio del ticket
