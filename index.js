@@ -5,7 +5,10 @@ client.login(process.env.token);
 
 client.on("ready", () => {
     console.log("Il bot è ONLINE")
-    client.user.setPresence({activity: { name: 'with discord.js' }, status: 'dnd'})
+    client.user.setPresence({activity: { name: 'con 𝗬𝗛𝗜𝗙𝗙𝗜𝗭' }})
+    .then(console.log)
+    .catch(console.error)
+    client.user.setStatus('dnd')
     .then(console.log)
     .catch(console.error)
 })
