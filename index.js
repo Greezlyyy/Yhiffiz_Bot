@@ -5,9 +5,9 @@ client.login(process.env.token);
 
 client.on("ready", () => {
     console.log("Il bot è ONLINE")
-    client.user.setStatus("idle")
-        .then(console.log)
-        .catch(console.error);
+    client.user.setPresence({activity: { name: 'with discord.js' }, status: 'dnd'})
+    .then(console.log)
+    .catch(console.error)
 })
 
 //Prima di tutto mandare il messaggio del ticket
