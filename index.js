@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION'] }); //<-- RICORDARSI QUESTO
 
-client.login("OTIxNzIzMjg5ODI1NjA3Njkw.Yb3DtQ.HNYBs-ghddk6-OfAjQzJaieZBlg");
+client.login(process.env.token);
 
 client.on("ready", () => {
     console.log("Il bot è ONLINE")
